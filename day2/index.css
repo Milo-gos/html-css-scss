@@ -1,0 +1,113 @@
+:root {
+    --pink: #f2726a;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #00853e, #50c878);
+    gap: 72px;
+}
+.card {
+    background-color: #242628;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    width: 260px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.card__avatar {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    border: 4px solid var(--pink);
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 24px;
+}
+
+.card__avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card__name {
+    margin-top: 24px;
+    text-align: center;
+
+}
+
+.card__role {
+    font-weight: 400;
+    text-align: center;
+    font-size: 16px;
+    color: var(--pink);
+    margin-top: 2px;
+}
+
+.card__icon {
+    margin: 0 24px;
+    margin-top: 24px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+
+.card__icon a {
+    color: white;
+    text-decoration: none;
+}
+.card__icon i{
+    cursor: pointer;
+    transition: .3s;
+ 
+}
+.card__icon i:hover {
+    color: var(--pink);
+    
+}
+.card__icon i{
+    font-size: 28px;
+    
+}
+
+.card__button {
+    padding: 8px 24px;
+    border: 1px solid var(--pink);
+    display: inline-block;
+    border-radius: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.card__button:hover {
+    background-color: var(--pink);
+}
+
+.card__avatar:hover {
+    width: 100%;
+    height: 100%;
+    border: unset;
+    border-radius: unset;
+    margin-top: 0;
+}
+
+
+
+
